@@ -49,9 +49,18 @@ const useTicTacToe = () => {
     setIsNext(!isNext);
   };
 
-  const getStatusMessage = () => {};
+  const getStatusMessage = () => {
+    const winner = calculateWinner(board);
+    if (winner) return `player ${winner} wins!`;
 
-  const resetGame = () => {};
+    if (!board.includes(null)) return "its a draw";
+    return `player ${isNext ? "X" : "O"} turn`;
+  };
+
+  const resetGame = () => {
+    setBoard(initialBoard());
+    setIsNext(true);
+  };
 
   return {
     board,

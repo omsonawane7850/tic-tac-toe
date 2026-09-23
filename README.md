@@ -1,13 +1,17 @@
 # Tic Tac Toe
 
-A simple **Tic Tac Toe** game built with React.js and a custom hook for managing game logic and state.
+A simple **Tic Tac Toe** game built with **React.js** and a custom hook for managing game logic and state.
 
 ## Features
 
 - Two-player gameplay
 - Winner & draw detection
 - Turn management
-- Reset game
+- Winning cells highlight
+- Scoreboard to track Player X, Player O, and draws
+- New Round functionality
+- Reset Game functionality
+- Track wins and draws across multiple rounds
 - Responsive UI
 
 ## Tech Stack
@@ -16,16 +20,11 @@ A simple **Tic Tac Toe** game built with React.js and a custom hook for managing
 - JavaScript
 - CSS
 - Vite
-
-## Future Improvements
-
-- Play game in multiple rounds
-- New Round functionality
-- scoreboard to track player scores
-- Track wins and draws across rounds
+- Custom React Hook
 
 ## Run Locally
 
 ```bash
 npm install
 npm run dev
+```
